@@ -261,72 +261,72 @@
         
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.html">
+            <a href="components-alerts.php">
               <i class="bi bi-circle"></i><span>Alerts</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
+            <a href="components-accordion.php">
               <i class="bi bi-circle"></i><span>Accordion</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="components-badges.php">
               <i class="bi bi-circle"></i><span>Badges</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.php">
               <i class="bi bi-circle"></i><span>Breadcrumbs</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.php">
               <i class="bi bi-circle"></i><span>Buttons</span>
             </a>
           </li>
           <li>
-            <a href="components-cards.html">
+            <a href="components-cards.php">
               <i class="bi bi-circle"></i><span>Cards</span>
             </a>
           </li>
           <li>
-            <a href="components-carousel.html">
+            <a href="components-carousel.php">
               <i class="bi bi-circle"></i><span>Carousel</span>
             </a>
           </li>
           <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.php">
               <i class="bi bi-circle"></i><span>List group</span>
             </a>
           </li>
           <li>
-            <a href="components-modal.html">
+            <a href="components-modal.php">
               <i class="bi bi-circle"></i><span>Modal</span>
             </a>
           </li>
           <li>
-            <a href="components-tabs.html">
+            <a href="components-tabs.php">
               <i class="bi bi-circle"></i><span>Tabs</span>
             </a>
           </li>
           <li>
-            <a href="components-pagination.html">
+            <a href="components-pagination.php">
               <i class="bi bi-circle"></i><span>Pagination</span>
             </a>
           </li>
           <li>
-            <a href="components-progress.html">
+            <a href="components-progress.php">
               <i class="bi bi-circle"></i><span>Progress</span>
             </a>
           </li>
           <li>
-            <a href="components-spinners.html">
+            <a href="components-spinners.php">
               <i class="bi bi-circle"></i><span>Spinners</span>
             </a>
           </li>
           <li>
-            <a href="components-tooltips.html">
+            <a href="components-tooltips.php">
               <i class="bi bi-circle"></i><span>Tooltips</span>
             </a>
           </li>
@@ -337,28 +337,28 @@
       
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <i class="bi bi-tags"></i>
           <span>Kategori Produk</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
+        <a class="nav-link collapsed" href="pages-faq.php">
           <i class="bi bi-box-seam"></i>
           <span>Data Produk</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact.php">
           <i class="bi bi-bar-chart-line"></i>
           <span>Laporan</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link collapsed" href="pages-register.php">
           <i class="bi bi-people"></i>
           <span>Manajemen User</span>
         </a>
@@ -377,7 +377,7 @@
       <h1>Blank Page</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
           <li class="breadcrumb-item">Pages</li>
           <li class="breadcrumb-item active">Blank</li>
         </ol>

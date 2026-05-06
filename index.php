@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -44,7 +38,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">CintaJeno</span>
       </a>
@@ -56,139 +50,7 @@
       <ul class="d-flex align-items-center">
 
         
-        <li class="nav-item dropdown">
-
-          
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
-
-          </ul><!-- End Notification Dropdown Items -->
-
-        </li><!-- End Notification Nav -->
-
-        <li class="nav-item dropdown">
-
-          
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 3 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>6 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>8 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li>
-
-          </ul><!-- End Messages Dropdown Items -->
-
-        </li><!-- End Messages Nav -->
+      
 
         <li class="nav-item dropdown pe-3">
 
@@ -257,7 +119,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="index.php">
           <i class="bi bi-speedometer2a"></i>
           <span>Dashboard</span>
         </a>
@@ -267,72 +129,72 @@
         
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-alerts.html">
+            <a href="components-alerts.php">
               <i class="bi bi-circle"></i><span>Alerts</span>
             </a>
           </li>
           <li>
-            <a href="components-accordion.html">
+            <a href="components-accordion.php">
               <i class="bi bi-circle"></i><span>Accordion</span>
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="components-badges.php">
               <i class="bi bi-circle"></i><span>Badges</span>
             </a>
           </li>
           <li>
-            <a href="components-breadcrumbs.html">
+            <a href="components-breadcrumbs.php">
               <i class="bi bi-circle"></i><span>Breadcrumbs</span>
             </a>
           </li>
           <li>
-            <a href="components-buttons.html">
+            <a href="components-buttons.php">
               <i class="bi bi-circle"></i><span>Buttons</span>
             </a>
           </li>
           <li>
-            <a href="components-cards.html">
+            <a href="components-cards.php">
               <i class="bi bi-circle"></i><span>Cards</span>
             </a>
           </li>
           <li>
-            <a href="components-carousel.html">
+            <a href="components-carousel.php">
               <i class="bi bi-circle"></i><span>Carousel</span>
             </a>
           </li>
           <li>
-            <a href="components-list-group.html">
+            <a href="components-list-group.php">
               <i class="bi bi-circle"></i><span>List group</span>
             </a>
           </li>
           <li>
-            <a href="components-modal.html">
+            <a href="components-modal.php">
               <i class="bi bi-circle"></i><span>Modal</span>
             </a>
           </li>
           <li>
-            <a href="components-tabs.html">
+            <a href="components-tabs.php">
               <i class="bi bi-circle"></i><span>Tabs</span>
             </a>
           </li>
           <li>
-            <a href="components-pagination.html">
+            <a href="components-pagination.php">
               <i class="bi bi-circle"></i><span>Pagination</span>
             </a>
           </li>
           <li>
-            <a href="components-progress.html">
+            <a href="components-progress.php">
               <i class="bi bi-circle"></i><span>Progress</span>
             </a>
           </li>
           <li>
-            <a href="components-spinners.html">
+            <a href="components-spinners.php">
               <i class="bi bi-circle"></i><span>Spinners</span>
             </a>
           </li>
           <li>
-            <a href="components-tooltips.html">
+            <a href="components-tooltips.php">
               <i class="bi bi-circle"></i><span>Tooltips</span>
             </a>
           </li>
@@ -343,28 +205,28 @@
       
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile.php">
           <i class="bi bi-tags"></i>
           <span>Kategori Produk</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
+        <a class="nav-link collapsed" href="pages-faq.php">
           <i class="bi bi-box-seam"></i>
           <span>Data Produk</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact.php">
           <i class="bi bi-bar-chart-line"></i>
           <span>Laporan</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link collapsed" href="pages-register.php">
           <i class="bi bi-people"></i>
           <span>Manajemen User</span>
         </a>
@@ -383,7 +245,7 @@
       <h1>Dashboard</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
