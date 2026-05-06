@@ -5,25 +5,25 @@ $auto = mysqli_query($conn, "select max(kd_kat) as max_code from categories");
 $hasil = mysqli_fetch_array($auto);
 $code = $hasil['max_code'];
 if ($code == NULL) {
-    $urutan = 0;
+  $urutan = 0;
 } else {
-    $urutan = (int) substr($code, 1, 3);
+  $urutan = (int) substr($code, 1, 3);
 }
 $urutan++;
 $huruf = "K";
 $kd_kat = $huruf . sprintf("%03s", $urutan);
 
 if (isset($_POST['simpan'])) {
-    $nm_kat = $_POST['nm_kat'];
+  $nm_kat = $_POST['nm_kat'];
 
-    $query = mysqli_query($conn, "INSERT INTO categories(kd_kat, category_name) VALUES ('$kd_kat', '$nm_kat')");
-    if ($query) {
-        echo "<script>alert('Data berhasil ditambahkan!')</script>";
-        header("refresh:0, kategori_produk.php");
-    } else {
-        echo "<script>alert('Data gagal ditambahkan!')</script>";
-        header("refresh:0, kategori_produk.php");
-    }
+  $query = mysqli_query($conn, "INSERT INTO categories(kd_kat, category_name) VALUES ('$kd_kat', '$nm_kat')");
+  if ($query) {
+    echo "<script>alert('Data berhasil ditambahkan!')</script>";
+    header("refresh:0, kategori_produk.php");
+  } else {
+    echo "<script>alert('Data gagal ditambahkan!')</script>";
+    header("refresh:0, kategori_produk.php");
+  }
 }
 ?>
 
@@ -63,7 +63,7 @@ if (isset($_POST['simpan'])) {
 
 <body>
 
- <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -140,7 +140,7 @@ if (isset($_POST['simpan'])) {
   </header><!-- End Header -->
 
 
- <!-- ======= Sidebar ======= -->
+  <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
@@ -202,54 +202,54 @@ if (isset($_POST['simpan'])) {
       <div class="row">
         <div class="col-lg-6">
 
-          
 
-            </div>
-          </div>
-
-          
-
-            </div>
-          </div>
 
         </div>
+      </div>
 
-        <div class="col-lg-6">
 
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tambah Kategori Produk</h5>
 
-              <!-- Vertical Form -->
-              <form class="row g-3" method="post">
-                <div class="col-12">
-                  <label for="kd_kat" class="form-label">Kode Kategori</label>
-                  <input type="text" class="form-control" id="kd_kat" name="kd_kat" value="<?php echo $kd_kat; ?>" readonly>
-                </div> 
-                  <div class="col-12">
-                  <label for="nm_kat" class="form-label">Nama kategori</label>
-                  <input type="text" class="form-control" id="nm_kat" name="nm_kat" required>
-                </div>
-              
-                <div class="text-center">
-                  <button type="button" class="btn btn-warning"><a href="kategori_produk.php" style="color: black; text-decoration:none;">Kembali<a></button>
-                  <button type="reset" class="btn btn-secondary">Reset</button>
-                  <button type="submit" class="btn btn-success" name="simpan">Simpan</button>
-                </div>
-              </form><!-- Vertical Form -->
+      </div>
+      </div>
 
-            </div>
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tambah Kategori Produk</h5>
+
+            <!-- Vertical Form -->
+            <form class="row g-3" method="post">
+              <div class="col-12">
+                <label for="kd_kat" class="form-label">Kode Kategori</label>
+                <input type="text" class="form-control" id="kd_kat" name="kd_kat" value="<?php echo $kd_kat; ?>" readonly>
+              </div>
+              <div class="col-12">
+                <label for="nm_kat" class="form-label">Nama kategori</label>
+                <input type="text" class="form-control" id="nm_kat" name="nm_kat" required>
+              </div>
+
+              <div class="text-center">
+                <button type="button" class="btn btn-warning"><a href="kategori_produk.php" style="color: black; text-decoration:none;">Kembali<a></button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-success" name="simpan">Simpan</button>
+              </div>
+            </form><!-- Vertical Form -->
+
           </div>
-
-            </div>
-          </div>
-
-         
-
-            </div>
-          </div>
-
         </div>
+
+      </div>
+      </div>
+
+
+
+      </div>
+      </div>
+
+      </div>
       </div>
     </section>
 

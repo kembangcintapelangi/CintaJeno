@@ -182,7 +182,7 @@
 
           <div class="card">
             <div class="card-body mt-3">
-              
+
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
@@ -194,7 +194,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tbody>
                   <?php
                   include "koneksi.php";
                   $no = 1;
@@ -211,7 +210,6 @@
                       </td>
                     </tr>
                   <?php } ?>
-                </tbody>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
