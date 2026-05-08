@@ -275,14 +275,14 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="data_produk">
+        <a class="nav-link collapsed" href="produk.php">
           <i class="bi bi-box-seam"></i>
           <span>Data Produk</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="laporan">
+        <a class="nav-link collapsed" href="laporan.php">
           <i class="bi bi-bar-chart-line"></i>
           <span>Laporan</span>
         </a>
