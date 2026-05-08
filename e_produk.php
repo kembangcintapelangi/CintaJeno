@@ -231,44 +231,33 @@ if (isset($_POST['update'])) {
                             <!-- Vertical Form -->
                             <form class="row g-3" method="post" enctype="multipart/form-data">
                                 <div class="col-12">
-                                    <label for="kd_produk" class="form-label">Kode Produk</
-                                    label>
-                                    <input type="text" class="form-control" id="kd_produk"
-                                    name="kd_produk" value="<?php echo $hasil['product_code']; ?>" readonly>
+                                    <label for="kd_produk" class="form-label">Kode Produk</label>
+                                    <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $hasil['product_code']; ?>" readonly>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="nm_produk" class="form-label">Nama Produk</
-                                    label>
-                                    <input type="text" class="form-control" id="namespace_produk"
-                                    name="nm_produk value="<?php echo $hasil['product_name']; ?>" required>
+                                    <label for="nm_produk" class="form-label">Nama Produk</label>
+                                    <input type="text" class="form-control" id="nm_produk" name="nm_produk" value="<?php echo $hasil['product_name']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
                                     <label for="stok" class="form-label">Stok</label>
-                                    <input type="numbar" class="form-control" id="stok"
-                                    name="stok" value="<?php echo $hasil['stok']; ?>" required>
+                                    <input type="numbar" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="min_stok" class="form-label">Minimal Stok</
-                                    label>
-                                    <input type="number" class="form-control" id="min_stok"
-                                     name="min_stok" value="<?php echo $hasil['min_stok']; ?>"
-                                     required>
+                                    <label for="min_stok" class="form-label">Minimal Stok</label>
+                                    <input type="number" class="form-control" id="min_stok" name="min_stok" value="<?php echo $hasil['min_stock']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
                                     <label for="harga" class="form-label">Harga</label>
-                                    <input type="number" class="form-control" id="harga"
-                                     name="harga" value="<?php echo $hasil['price']; ?>"
-                                     required>
+                                    <input type="number" class="form-control" id="harga" name="harga" value="<?php echo $hasil['price']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
                                     <label for="id_kategori" class="form-label">Kategori</label>
-                                    <select class="form-control" id="id_kategori" 
-                                    name="id_kategori" required>
+                                    <select class="form-control" id="id_kategori" name="id_kategori" required>
                                         <?php
                                         $kategori = mysqli_query($conn, "SELECT * FROM 
                                         categories");
@@ -299,8 +288,7 @@ if (isset($_POST['update'])) {
                                         <a href="produk.php" style="color: black; 
                                         text-decoration:none;">Kembali</a>
                                     </button>
-                                    <button type="reset" class="btn btn-secondary">Reset</
-                                    button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
                                     <button type="submit" class="btn btn-success" 
                                     name="update">Update</button>
                                 </div>

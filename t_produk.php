@@ -37,10 +37,7 @@ if (isset($_POST['simpan'])) {
         $imgnewfile = md5(time() . $imgfile) . "." . $extension;
         move_uploaded_file($tmp_file, $dir . $imgnewfile);
 
-        $query = mysqli_query($conn, "INSERT INTO products 
-        (category_id, product_code, product_name, stock, min_stock, price, gambar) 
-        VALUES 
-        ('$id_kategori', '$kd_produk', '$nm_produk', '$stok', '$min_stok', '$harga', '$imgnewfile')");
+        $query = mysqli_query($conn, "INSERT INTO products (category_id, product_code, product_name, stock, min_stock, price, gambar) VALUES ('$id_kategori', '$kd_produk', '$nm_produk', '$stok', '$min_stok', '$harga', '$imgnewfile')");
 
         if ($query) {
             echo "<script>alert('Produk berhasil ditambahkan!');</script>";
@@ -59,7 +56,7 @@ if (isset($_POST['simpan'])) {
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kategori Produk - CintaJeno</title>
+    <title>Data Produk - CintaJeno</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -223,10 +220,10 @@ if (isset($_POST['simpan'])) {
                             <h5 class="card-title">Vertical Form</h5>
 
                             <!-- Vertical Form -->
-                            <form class="row g-3"method="post" enctype="multipart/form-data">
+                            <form class="row g-3" method="post" enctype="multipart/form-data">
                                 <div class="col-12">
                                     <label for="kd_produk" class="form-label">Kode Produk</label>
-                                    <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $kd_produk; ?>" readonly>
+                                    <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $kd_produk ?>" readonly>
                                 </div>
                                 <div class="col-12">
                                     <label for="nm_produk" class="form-label">Nama Produk</label>
@@ -240,12 +237,12 @@ if (isset($_POST['simpan'])) {
                                     <label for="min_stok" class="form-label">Minimal Stok</label>
                                     <input type="number" class="form-control" id="min_stok" name="min_stok" required>
                                 </div>
-                                <div class="text-center">
-                                    <button type="harga" class="form-label">Harga</label>
-                                    <button type="number" class="form-control" id="harga" name="harga" required>
+                                <div class="col-12">
+                                    <label type="harga" class="form-label">Harga</label>
+                                    <input type="number" class="form-control" id="harga" name="harga" required>
                                 </div>
-                                <div class="col-12'>
-                                    <label for="id_kategori" class="form-label">kategori</label>
+                                <div class="col-12">
+                                    <label for="id_kategori" class="form-label">Kategori</label>
                                     <select class="form-control" id="id_kategori" name="id_kategori" required>
                                         <option value="">-- Pilih Kategori --</option>
                                         <?php
@@ -259,7 +256,7 @@ if (isset($_POST['simpan'])) {
                                 </div>
                                 <div calss="col-12">
                                     <label for="gambar" class="form-label">Gambar Produk</label>
-                                    <input type="file" class="form=control" id="gambar" accept="image/*">
+                                    <input type="file" class="form-control" id="gambar" name="gambar" accept="image/*">
                                 </div>
                                 <div class="text-center">
                                     <button type="button" class="btn btn-warning"><a href="produk.php" style="color: black; text-decoration:none;">Kembali</a></button>

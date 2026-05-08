@@ -199,6 +199,7 @@
                     <th scope="col">No</th>
                     <th scope="col">Kode Produk</th>
                     <th scope="col">Nama Produk</th>
+                    <th scope="col">Kategori</th>
                     <th scope="col">Stok</th>
                     <th scope="col">Harga</th>
                     <th scope="col">Gambar</th>
@@ -225,8 +226,7 @@
                             <td><?php echo $data['product_name']; ?></td>
                             <td><?php echo $data['category_name']; ?></td>
                             <td><?php echo $data['stock']; ?></td>
-                            <td>Rp <?php echo number_format($data['price'], 0, 
-                            ',', '.'); ?></td>
+                            <td>Rp <?php echo number_format($data['price'], 0, ',', '.'); ?></td>
                             <td>
                                 <img src="produk_img/<?php echo $data
                                 ['gambar']; ?>" width="60">
