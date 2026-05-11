@@ -242,7 +242,7 @@ if (isset($_POST['update'])) {
 
                                 <div class="col-12">
                                     <label for="stok" class="form-label">Stok</label>
-                                    <input type="numbar" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
+                                    <input type="number" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
