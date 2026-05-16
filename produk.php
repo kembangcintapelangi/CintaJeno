@@ -48,68 +48,49 @@
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
 
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+        </a><!-- End Profile Iamge Icon -->
 
-        <li class="nav-item dropdown pe-3">
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+            <li class="nav-item dropdown pe-3">
+              <a
+                class="nav-link nav-profile d-flex align-items-center pe-0"
+                href="#"
+                data-bs-toggle="dropdown">
+                <img
+                  src="assets/img/profile-img.jpg"
+                  alt="Profile"
+                  class="rounded-circle" /> </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                  <h6><?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'User'; ?></h6>
+                  <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-          </a><!-- End Profile Iamge Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="logout.php">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Profile Dropdown Items -->
             </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
-      </ul>
-    </nav><!-- End Icons Navigation -->
+            <!-- End Profile Nav -->
+          </ul>
+        </nav>
+  </header>
+  </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
 
-   <!-- ======= Sidebar ======= -->
+  <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
@@ -149,7 +130,7 @@
         </a>
       </li><!-- End Register Page Nav -->
 
-      
+
 
     </ul>
 
@@ -168,16 +149,16 @@
     </div><!-- End Page Title -->
 
     <div class="row">
-    <div class="col-lg-12">
+      <div class="col-lg-12">
 
         <div class="card">
-            <div class="card-body mt-3">
-                <a href="t_produk.php" class="btn btn-primary">Tambah Data</a>
-                <a href="stok.php" class="btn btn-dark">Stok</a>
-            </div>
+          <div class="card-body mt-3">
+            <a href="t_produk.php" class="btn btn-primary">Tambah Data</a>
+            <a href="stok.php" class="btn btn-dark">Stok</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
     <section class="section">
       <div class="row">
@@ -185,7 +166,7 @@
 
           <div class="card">
             <div class="card-body mt-3">
-              
+
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
@@ -201,39 +182,36 @@
                   </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    include "koneksi.php";
-                    $no = 1;
+                  <?php
+                  include "koneksi.php";
+                  $no = 1;
 
-                    // ambil data produk + nama kategori
-                    $sql = mysqli_query($conn, "
+                  // ambil data produk + nama kategori
+                  $sql = mysqli_query($conn, "
     SELECT p.*, c.category_name
     FROM products p
     LEFT JOIN categories c ON p.category_id = c.id
 ");
 
-                    while ($data = mysqli_fetch_array($sql)) {
-                    ?>
-                        <tr>
-                            <td><?php echo $no++; ?></td>
-                            <td><?php echo $data['product_code']; ?></td>
-                            <td><?php echo $data['product_name']; ?></td>
-                            <td><?php echo $data['category_name']; ?></td>
-                            <td><?php echo $data['stock']; ?></td>
-                            <td>Rp <?php echo number_format($data['price'], 0, ',', '.'); ?></td>
-                            <td>
-                                <img src="produk_img/<?php echo $data
-                                ['gambar']; ?>" width="60">
-                            </td>
-                            <td>
-                                <a href="e_produk.php?id=<?php echo $data
-                                ['id']; ?>" class="btn btn-warning">Edit</a>
-                                <a href="h_produk.php?id=<?php echo $data
-                                ['id']; ?>" class="btn btn-danger" 
-                                onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data?')">Hapus</a>
-                            </td>
-                        </tr>
-                    <?php } ?>
+                  while ($data = mysqli_fetch_array($sql)) {
+                  ?>
+                    <tr>
+                      <td><?php echo $no++; ?></td>
+                      <td><?php echo $data['product_code']; ?></td>
+                      <td><?php echo $data['product_name']; ?></td>
+                      <td><?php echo $data['category_name']; ?></td>
+                      <td><?php echo $data['stock']; ?></td>
+                      <td>Rp <?php echo number_format($data['price'], 0, ',', '.'); ?></td>
+                      <td>
+                        <img src="produk_img/<?php echo $data['gambar']; ?>" width="60">
+                      </td>
+                      <td>
+                        <a href="e_produk.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
+                        <a href="h_produk.php?id=<?php echo $data['id']; ?>" class="btn btn-danger"
+                          onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data?')">Hapus</a>
+                      </td>
+                    </tr>
+                  <?php } ?>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
