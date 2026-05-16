@@ -4,8 +4,8 @@ include "koneksi.php";
 
 // Cek apakah user sudah login
 if (!isset($_SESSION["login"])) {
-    header("Location: login.php");
-    exit;
+  header("Location: login.php");
+  exit;
 }
 ?>
 <!DOCTYPE html>
@@ -58,43 +58,39 @@ if (!isset($_SESSION["login"])) {
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
 
-        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-          <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-        </a><!-- End Profile Iamge Icon -->
+        <li class="nav-item dropdown pe-3">
+          <a
+            class="nav-link nav-profile d-flex align-items-center pe-0"
+            href="#"
+            data-bs-toggle="dropdown">
+            <img
+              src="assets/img/profile-img.jpg"
+              alt="Profile"
+              class="rounded-circle" />
+          </a>
+          <!-- End Profile Image Icon -->
 
-        <nav class="header-nav ms-auto">
-          <ul class="d-flex align-items-center">
-            <li class="nav-item dropdown pe-3">
-              <a
-                class="nav-link nav-profile d-flex align-items-center pe-0"
-                href="#"
-                data-bs-toggle="dropdown">
-                <img
-                  src="assets/img/profile-img.jpg"
-                  alt="Profile"
-                  class="rounded-circle" /> </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-                <li class="dropdown-header">
-                  <h6><?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'User'; ?></h6>
-                  <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-
-                <li>
-                  <a class="dropdown-item d-flex align-items-center" href="logout.php">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <span>Sign Out</span>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Profile Dropdown Items -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6><?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'User'; ?></h6>
+              <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
             </li>
-            <!-- End Profile Nav -->
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="logout.php">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
           </ul>
-        </nav>
+          <!-- End Profile Dropdown Items -->
+        </li>
+        <!-- End Profile Nav -->
+      </ul>
+    </nav>
   </header>
   </nav><!-- End Icons Navigation -->
 
@@ -106,11 +102,13 @@ if (!isset($_SESSION["login"])) {
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
-          <i class="bi bi-speedometer2"></i>
+        <a class="nav-link " href="index.php">
+          <i class="bi bi-speedometer2a"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="kategori_produk.php">
@@ -120,8 +118,8 @@ if (!isset($_SESSION["login"])) {
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="produk.php">
-          <i class="bi bi-box"></i>
+        <a class="nav-link collapsed" href="produk.php">
+          <i class="bi bi-box-seam"></i>
           <span>Data Produk</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
@@ -140,6 +138,7 @@ if (!isset($_SESSION["login"])) {
         </a>
       </li><!-- End Register Page Nav -->
 
+      <li class="nav-item">
 
 
     </ul>

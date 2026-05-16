@@ -76,6 +76,7 @@ if (isset($_POST['update'])) {
 
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
+
                 <li class="nav-item dropdown pe-3">
                     <a
                         class="nav-link nav-profile d-flex align-items-center pe-0"
@@ -84,9 +85,11 @@ if (isset($_POST['update'])) {
                         <img
                             src="assets/img/profile-img.jpg"
                             alt="Profile"
-                            class="rounded-circle" /> </a>
-                    <ul
-                        class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                            class="rounded-circle" />
+                    </a>
+                    <!-- End Profile Image Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
                             <h6><?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'User'; ?></h6>
                             <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
@@ -112,7 +115,56 @@ if (isset($_POST['update'])) {
 
     </header><!-- End Header -->
 
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.php">
+                    <i class="bi bi-speedometer2a"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="kategori_produk.php">
+                    <i class="bi bi-tags"></i>
+                    <span>Kategori Produk</span>
+                </a>
+            </li><!-- End Profile Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="produk.php">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Data Produk</span>
+                </a>
+            </li><!-- End F.A.Q Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="laporan.php">
+                    <i class="bi bi-bar-chart-line"></i>
+                    <span>Laporan</span>
+                </a>
+            </li><!-- End Contact Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="users.php">
+                    <i class="bi bi-people"></i>
+                    <span>Manajemen User</span>
+                </a>
+            </li><!-- End Register Page Nav -->
+
+            <li class="nav-item">
+
+
+        </ul>
+
     </aside><!-- End Sidebar-->
+
+
 
     <main id="main" class="main">
 
@@ -165,7 +217,7 @@ if (isset($_POST['update'])) {
             &copy; Copyright <strong><span>CintaJeno</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Designed by <a href="">Cinta</a>
+            Designed by <a href="https://www.instagram.com/floverain_">Cinta</a>
         </div>
     </footer><!-- End Footer -->
 
