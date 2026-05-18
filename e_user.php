@@ -10,8 +10,9 @@ if (!isset($_SESSION["login"])) {
 ?>
 <?php
 include 'koneksi.php';
-$id = $_GET['id'];
+$id = isset($_GET['id']) ? $_GET['id'] : '';
 $data = mysqli_query($conn, "SELECT * FROM users WHERE id = '$id'");
+if ($data && mysqli_num_rows($data) > 0) {}
 $user = mysqli_fetch_array($data);
 
 if (isset($_POST['update'])) {
@@ -108,7 +109,7 @@ if (isset($_POST['update'])) {
                             <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
                         </li>
                         <li>
-                            <hr class="dropdown-divider" />
+                            <hr class="dropdown-divider"/>
                         </li>
 
                         <li>

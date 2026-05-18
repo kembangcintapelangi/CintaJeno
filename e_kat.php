@@ -20,10 +20,10 @@ if (isset($_POST['update'])) {
     $query = mysqli_query($conn, "UPDATE categories SET category_name = '$nm_kat' WHERE id='$id'");
     if ($query) {
         echo "<script>alert('Data berhasil diubah!')</script>";
-        header("refresh:0; kategori_produk.php");
+        header("refresh:0, kategori_produk.php");
     } else {
         echo "<script>alert('Data gagal diubah!')</script>";
-        header("refresh:0; kategori_produk.php");
+        header("refresh:0, kategori_produk.php");
     }
 }
 ?>
@@ -121,7 +121,7 @@ if (isset($_POST['update'])) {
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.php">
+                <a class="nav-link collapsed" href="index.php">
                     <i class="bi bi-speedometer2a"></i>
                     <span>Dashboard</span>
                 </a>
@@ -130,7 +130,7 @@ if (isset($_POST['update'])) {
 
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="kategori_produk.php">
+                <a class="nav-link " href="kategori_produk.php">
                     <i class="bi bi-tags"></i>
                     <span>Kategori Produk</span>
                 </a>

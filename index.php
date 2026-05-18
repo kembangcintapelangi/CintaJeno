@@ -197,7 +197,7 @@ function waktu_lalu($datetime)
 
       <li class="nav-item">
         <a class="nav-link " href="index.php">
-          <i class="bi bi-speedometer2a"></i>
+          <i class="bi bi-speedometer2"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->

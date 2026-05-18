@@ -10,8 +10,9 @@ if (!isset($_SESSION["login"])) {
 ?>
 <?php
 include "koneksi.php";
-$id = $_GET['id'];
+$id = isset($_GET['id']) ? $_GET['id'] : '';
 $query = mysqli_query($conn, "SELECT * FROM products WHERE id='$id'");
+if ($query && mysqli_num_rows($query) > 0) {}
 $hasil = mysqli_fetch_array($query);
 if (isset($_POST['update'])) {
 
@@ -162,8 +163,6 @@ if (isset($_POST['update'])) {
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
-
-
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="kategori_produk.php">
