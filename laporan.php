@@ -21,7 +21,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM product
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logobarang.jpeg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -50,7 +50,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM product
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logobarang.jpeg" alt="">
         <span class="d-none d-lg-block">CintaJeno</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -65,7 +65,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM product
             href="#"
             data-bs-toggle="dropdown">
             <img
-              src="assets/img/profile-img.jpg"
+              src="assets/img/fotoprofil.jpeg"
               alt="Profile"
               class="rounded-circle" />
           </a>
