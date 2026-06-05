@@ -213,7 +213,7 @@ if (!isset($_SESSION["login"])) {
 
                       <td>
                         <a href="e_user.php?id=<?php echo $data['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="h_user.php?id=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin inin menghapus user ini?')">
+                        <a href="h_users.php?id=<?php echo $data['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin inin menghapus user ini?')">
                           Hapus
                         </a>
                       </td>
